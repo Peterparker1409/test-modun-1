@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,400;1,800&family=Roboto:wght@400;500&display=swap');
+    </style>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./giohang.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img src="./ảnh/logo.png" class="logo"></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <div id="ca-nhan" class="ca-nhan">
+            <i class='bx bx-user'></i>
+            <span class="user">User</span>
+            <i class='bx bxs-exit'></i>
+        </div>  
+
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#delivery">Delivery</a></li>
+            <li><a href="#app  ">App</a></li>
+            <li><a href="#about  ">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a id="signInBtn" class="btn" href="./dangki-dangnhap/dangnhap.html">Sign In</a></li>
+            <li><a  id="signUpBtn" class="btn" href="./dangki-dangnhap/dangki.html">Sign Up</a></li>
+
+
+
+
+
+        </ul>
+       
+        <div class="giohang">
+            <i class='bx bxs-cart'></i>
+            <span id="quantity" class="quantity">0</span>
+        </div>
+
+    </header>
+    <section class="home" id="home">
+        <div class="home-text">
+            <span> Welcome to </span>
+            <h1>Starbucks Coffee</h1>
+            <h2>Want to Buy Coffee <br>My Buy Two Get Free :3</br></h2>
+            <a href="#" class="btn-1">Click here</a>
+        </div>
+        <div class="home-img">
+            <img src="./ảnh/home.png" alt="">
+        </div>
+    </section>
+    <section class="shop" id="shop">
+        <div class="heading">
+            <span>Buy Now</span>
+            <h1>Coffee Shop</h1>
+        </div>
+        <div class="shop-container" id="shopContainer">
+        </div>
+        
+        <!-- <div class="shop-container">
+            <div class="box">
+    
+                <div class="box-img">
+                    <img src="./ảnh/shop1.png" alt="">
+                </div>
+               
+                <h2 class="drink"> Pink Tea </h2>
+                <span class="price"> 5$ </span>
+                <button class="btn1"> Order Now</button>
+            </div>
+    
+            <div class="box">
+                <div class="box-img">
+                    <img src="./ảnh/shop2.png" alt="">
+                </div>
+                <div class="stars">
+                    <i class=' bx bxs-star'></i>
+                    <i class=' bx bxs-star'></i>
+                    <i class=' bx bxs-star'></i>
+                    <i class=' bx bxs-star'></i>
+                    <i class=' bx bxs-star-half'></i>
+                </div>
+                <h2 class="drink"> Coffee </h2>
+                <span class="price"> 6$ </span>
+                <button class="btn1"> Order Now</button>
+            </div>
+    
+            <div class="box">
+                <div class="box-img">
+                    <img src="./ảnh/shop3.png" alt="">
+                </div>
+                <div class="stars">
+                    <i class=' bx bxs-star'></i>
+                    <i class=' bx bxs-star'></i>
+                    <i class=' bx bxs-star'></i>
+                    <i class=' bx bxs-star'></i>
+                    <i class=' bx bxs-star'></i>
+                </div>
+                <h2 class="drink"> MatCha</h2>
+                <span class="price"> 7$ </span>
+                <button class="btn1"> Order Now</button>
+            </div>
+    
+    
+        </div> -->
+        <section class="cart">
+            <i class='bx bx-chevrons-right' ></i>
+            <h2> Cart </h2>
+            <form action="">
+                <table>
+                    <thead>
+                        <tr>
+                            <th> Drinks </th>
+                            <th> Price </th>
+                            <th> Quantity </th>
+                            <th> Delete </th>
+    
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <tr>
+                            <td> <img style="width: 50px;height: 80px;" src="./shop1.png" alt=""> hồng trà </td>
+                            <td> <span> 6 $</span> </td>
+                            <td> <input style="width: 30px;" type="number" min="1" value="1"> </td>
+                            <td style="cursor: pointer;"> Xóa </td>
+                        </tr>
+    
+                   
+                        <tr>
+                            <td> <img style="width: 50px;height: 80px;" src="./shop2.png" alt=""> kem sữa </td>
+                            <td> <span> 7 $</span> </td>
+                            <td> <input style="width: 30px;" type="number" min="1" value="1"> </td>
+                            <td style="cursor: pointer;"> Xóa </td>
+                        </tr> -->
+    
+                    </tbody>
+    
+    
+    
+    
+    
+                </table>
+                <div class="price-total" style="text-align: right;">
+                    <p style="font-weight: 700; "> Total :<span> 0 $ </span> </p>
+                    <button class="btn-checkout" type="submit"> Pay </button>
+                </div>
+            </form>
+        </section>
+    </section>
+
+    <section class="delivery" id="delivery">
+        <div class="heading">
+            <span>Get it Easily Now</span>
+            <h1>Order with Uber Eats</h1>
+        </div>
+        <div class="container">
+            <div class="delivery-img">
+                <img src="./ảnh/delivery.png" alt="">
+            </div>
+            <div class="delivery-text">
+                <h2>Delivery Makes Your Days Easier</h2>
+                <p>
+                    If the customer is very smart, he or she will be able to achieve the desired result. With just
+                    debts, they provide, they leave it to the wise, that they will not be accepted, and it will happen
+                    that bodily pains will be followed by discomfort, and that it will be followed by convenient labor.
+                    They fall
+                </p>
+                <p>
+                    It is very important for the customer to pay attention to the adipiscing process. We lead, at the
+                    time of the flight, there are no advantages and disadvantages of them. So that neither their pain
+                    nor their guilt escapes. By right, blessed are those who praise the pains of their sufferings!
+
+                </p>
+                <a href="#" class="btn-1">Order Delivery</a>
+            </div>
+        </div>
+    </section>
+    <section class="app" id="app">
+        <div class="heading">
+            <span>Download App</span>
+            <h1>Download App for User Convenience</h1>
+        </div>
+        <div class="container">
+            <div class="delivery-img">
+                <img src="./ảnh/app.png" alt="">
+            </div>
+            <div class="app-text">
+                <h2>Live Routines Easily</h2>
+                <p>The company itself is a very successful company. Even those who are corrupted even to the smallest
+                    degree, for forgiveness will be followed by the flight of choosing him.</p>
+                <p>
+                    The company itself is a very successful company. Behold, if there be any expedient but from the
+                    attainment of some distinction, the corrupt be spared the fault of the accusers, who are born to
+                    provide for them, whence they are made easy, or their troubles convenient.
+                </p>
+                <a href="#" class="btn-1"> Get App</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./ảnh/about.png" alt="">
+        </div>
+        <div class="about-text">
+            <h2>51 years serving the community</h2>
+            <p>The company itself is a very successful company. Let us see the choice of our accusers, and let anyone
+                criticize the free and wise man for his pleasures! Should the elders like them be held unless in? of the
+                body, softened!</p>
+            <p>If the customer is very smart, he or she will be able to achieve the desired result. Inventing the times
+                and those who do not know those who praise them, those who are discerning will never criticize the
+                greater pleasures of following the duties of things to gain by pain, because those who are further pain
+                pleases the times</p>
+            <a href="#" class="btn-1">Read Here</a>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-tiktok'></i></a>
+            <a href="#"><i class='bx bxl-youtube'></i></a>
+        </div>
+        <div class="links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Our Company</a>
+            <a href="#">Terms Of Use</a>
+        </div>
+        <p>&#169; All Right Reserved</p>
+
+    </section>
+
+    <script src="./index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+
+</html>
